@@ -6,19 +6,42 @@
     <title>Talent Marketplace</title>
 </head>
 <body>
-       <nav>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
     <h1>MICT Talent Portal</h1>
-    <input type="text" id="search" placeholder="Search candidates...">
+
+    <input 
+      type="text" 
+      id="searchInput" 
+      placeholder="Search by name or skill..."
+    >
   </nav>
 
-  <div class="container">
+  <!-- MAIN LAYOUT -->
+  <div class="main">
 
-    <div id="candidateList"></div>
+    <!-- FILTER SIDEBAR -->
+    <aside class="sidebar">
+      <h3>Filters</h3>
+
+      <label>Status</label>
+      <select id="statusFilter">
+        <option value="all">All</option>
+        <option value="Completed Internship">Completed</option>
+        <option value="Currently Doing Internship">In Progress</option>
+      </select>
+    </aside>
+
+    <!-- CANDIDATE GRID -->
+    <section class="content">
+      <div id="candidateList"></div>
+    </section>
 
   </div>
 
   <script src="data.js"></script>
   <script src="app.js"></script>
-    
+
 </body>
 </html>

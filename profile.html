@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+  <div id="profileContainer"></div>
+
+  <script src="data.js"></script>
+  <script>
+    const id = localStorage.getItem("selectedCandidate");
+    const candidate = candidates.find(c => c.id == id);
+
+    const container = document.getElementById("profileContainer");
+
+    container.innerHTML = `
+      <h1>${candidate.name}</h1>
+      <img src="${candidate.image}" width="200"/>
+      <p><strong>Skills:</strong> ${candidate.skills.join(", ")}</p>
+      <p><strong>Status:</strong> ${candidate.status}</p>
+      <p><strong>Location:</strong> ${candidate.location}</p>
+      <a href="${candidate.cv}" download>Download CV</a>
+    `;
+  </script>
+
+</body>
+</html>
