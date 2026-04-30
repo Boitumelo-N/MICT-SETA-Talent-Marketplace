@@ -10,39 +10,79 @@
 
   <!-- NAVBAR -->
   <nav class="navbar">
-    <h1>MICT Talent Portal</h1>
-
-    <input 
-      type="text" 
-      id="searchInput" 
-      placeholder="Search by name or skill..."
-    >
+    <h1>MICT Talent</h1>
+    <div>
+      <a href="#">Login</a>
+      <a href="#" class="btn">Get Started</a>
+    </div>
   </nav>
 
-  <!-- MAIN LAYOUT -->
-  <div class="main">
+  <!-- HERO -->
+  <section class="hero">
+   <h2>Hire Verified Tech & Digital Talent — Faster</h2>
+<p>
+  Access a curated pool of MICT SETA interns and graduates ready to work.
+</p>
 
-    <!-- FILTER SIDEBAR -->
-    <aside class="sidebar">
-      <h3>Filters</h3>
+    <div class="hero-buttons">
+      <button class="primary">Hire Talent</button>
+      <button class="secondary">Join as Candidate</button>
+    </div>
+  </section>
 
-      <label>Status</label>
-      <select id="statusFilter">
-        <option value="all">All</option>
-        <option value="Completed Internship">Completed</option>
-        <option value="Currently Doing Internship">In Progress</option>
-      </select>
-    </aside>
+  <!-- VALUE SECTION -->
+  <section class="value">
+    <h2>Why This Platform?</h2>
+    <div class="value-grid">
+      <div class="value-card">
+        <h3>✔ Verified Talent</h3>
+        <p>All candidates are part of MICT SETA programmes.</p>
+      </div>
 
-    <!-- CANDIDATE GRID -->
-    <section class="content">
-      <div id="candidateList"></div>
-    </section>
+      <div class="value-card">
+        <h3>⚡ Faster Hiring</h3>
+        <p>No need to filter unqualified applicants.</p>
+      </div>
 
-  </div>
+      <div class="value-card">
+        <h3>🎯 Targeted Skills</h3>
+        <p>Find talent Systems Development, Systems Support and more.</p>
+      </div>
+    </div>
+  </section>
 
-  <script src="data.js"></script>
-  <script src="app.js"></script>
+  <!-- HOW IT WORKS -->
+  <section class="how">
+    <h2>How It Works</h2>
+    <div class="steps">
+      <div>1. Create Profile</div>
+      <div>2. Upload CV</div>
+      <div>3. Get Discovered</div>
+    </div>
+  </section>
+
+  <!-- SPLIT SECTION -->
+  <section class="split">
+    
+    <div class="split-card">
+      <h2>For Employers</h2>
+      <p>Browse verified candidates and hire faster.</p>
+      <button class="primary">Browse Talent</button>
+    </div>
+
+    <div class="split-card">
+      <h2>For Candidates</h2>
+      <p>Showcase your skills and get hired.</p>
+      <button class="secondary">Create Profile</button>
+    </div>
+
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <h2>Start Building Your Future Today</h2>
+    <button class="primary">Get Started</button>
+  </section>
 
 </body>
 </html>
