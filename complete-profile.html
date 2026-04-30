@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+
+  <nav class="navbar">
+    <h1>Complete Your Profile</h1>
+  </nav>
+
+  <div class="form-container">
+    <h2>Finish Your Profile</h2>
+
+    <form id="profileForm">
+
+      <input type="text" id="skills" placeholder="Skills (comma separated)" required />
+
+      <select id="status" required>
+        <option value="">Internship Status</option>
+        <option value="Completed Internship">Completed</option>
+        <option value="Currently Doing Internship">In Progress</option>
+      </select>
+
+      <input type="text" id="location" placeholder="Location" />
+
+      <input type="text" id="image" placeholder="Profile Image URL" />
+
+      <input type="text" id="cv" placeholder="CV URL" />
+
+      <button type="submit" class="primary">Save Profile</button>
+
+    </form>
+  </div>
+
+  <script src="complete-profile.js"></script>
+
+
+</body>
+</html>

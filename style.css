@@ -139,6 +139,31 @@ button {
   margin-top: 15px;
 }
 
+.form-container {
+  max-width: 500px;
+  margin: 60px auto;
+  background: #1e293b;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, select {
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+
+input:focus, select:focus {
+  border: 2px solid #4f46e5;
+}
+
 /* CTA */
 .cta {
   text-align: center;
